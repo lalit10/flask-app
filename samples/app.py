@@ -3,7 +3,7 @@ import function
 app = Flask(__name__)
 @app.route('/get_catalan_nos/', methods=['GET', 'POST'])
 def welcome():
-    for i in range(200):
+    for i in range(50):
         value = function.catalan(i)
         print("Value is:-", value)
     return jsonify({"result": value})
